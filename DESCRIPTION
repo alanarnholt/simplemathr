@@ -1,0 +1,12 @@
+Package: simplemathr
+Type: Package
+Title: Simple Math Stuff
+Version: 0.1.0
+Author: Alan Arnholt
+Maintainer: Alan Arnholt <arnholtat@appstate.edu>
+Description: Describe you package here and make sure to end your description with a full stop.
+License: GPL-2
+LazyData: TRUE
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

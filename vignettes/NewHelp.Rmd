@@ -1,0 +1,27 @@
+---
+title: "New Help Doc"
+author: "Joe Smarty"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  \VignetteEncoding{UTF-8}
+---
+
+To add two numbers use `R` like this example:
+
+```{r}
+ans <- 2 + 7
+ans
+```
+
+The answer for adding 2 and 7 is `r ans`.
+
+Now Jeff likes to make pictures such as this histogram:
+
+```{r}
+set.seed(123)
+x <- rchisq(10000, 2)
+hist(x, col = "purple")
+```
