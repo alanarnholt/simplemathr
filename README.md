@@ -13,7 +13,7 @@ To install this package use:
 devtools::install_github(`alanarnholt/simplemathr`, build_vignettes = TRUE)
 ```
 
-## BugReports
+## Bug Reports
 
-Please report bugs to [https://github.com/alanarnholt/simplemathr/issues](https://github.com/alanarnholt/simplemathr/issues)
+Please report bugs and suggestions to [https://github.com/alanarnholt/simplemathr/issues](https://github.com/alanarnholt/simplemathr/issues)
 
