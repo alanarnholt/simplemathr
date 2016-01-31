@@ -2,11 +2,17 @@ Package: simplemathr
 Type: Package
 Title: Simple Math Stuff
 Version: 0.1.0
-Author: Alan Arnholt
-Maintainer: Alan Arnholt <arnholtat@appstate.edu>
-Description: Describe you package here and make sure to end your description with a full stop.
+Authors@R: c(person("Alan", "Arnholt", email = "arnholtat@appstate.edu", role = c("aut", "cre")),
+             person("Erin", "Kreiling", email = "kreilingeg@appstate.edu", role = "aut"),
+             person("Ben", "Jones", email = "jonesb@appstate.edu", role = "aut"),
+             person("Jack", "Leff", email = "leffjr@appstate.edu", role = "ctb"))
+Description: Describe what your package does. Make sure this description ends
+    with a period.
+Depends: R (>= 3.2.0)
 License: GPL-2
 LazyData: TRUE
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/alanarnholt/simplemathr
+BugReports: https://github.com/alanarnholt/simplemathr/issues
