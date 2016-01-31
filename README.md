@@ -1,6 +1,6 @@
 # simplemathr
 Alan Arnholt  
-1/31/2016  
+Last Updated: `r Sys.Date()`  
 
 ## simplemathr Version 0.1.0
 
