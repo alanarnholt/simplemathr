@@ -17,3 +17,4 @@ devtools::install_github(`alanarnholt/simplemathr`, build_vignettes = TRUE)
 
 Please report bugs and suggestions to [https://github.com/alanarnholt/simplemathr/issues](https://github.com/alanarnholt/simplemathr/issues)
 
+## Something new here
