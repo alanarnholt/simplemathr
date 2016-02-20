@@ -10,7 +10,7 @@ To install this package use:
 
 
 ```s
-devtools::install_github(`alanarnholt/simplemathr`, build_vignettes = TRUE)
+devtools::install_github('alanarnholt/simplemathr', build_vignettes = TRUE)
 ```
 
 ## Bug Reports
