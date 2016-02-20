@@ -1,6 +1,6 @@
 # simplemathr
 Alan Arnholt  
-2016-01-31  
+2016-02-01  
 
 ## simplemathr Version 0.1.0
 
