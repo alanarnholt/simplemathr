@@ -20,6 +20,6 @@ Dice
 \examples{
 set.seed(123)
 roll()
-roll(1:20)
+roll(dietype = 1:20)
 }
 
