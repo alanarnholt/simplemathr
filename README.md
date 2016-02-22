@@ -2,7 +2,9 @@
 Alan Arnholt  
 2016-02-01  
 
-## simplemathr Version 0.1.0
+## simplemathr Version 0.1.1
+
+[![Travis-CI Build Status](https://travis-ci.org/alanarnholt/simplemathr.svg?branch=master)](https://travis-ci.org/alanarnholt/simplemathr)
 
 ## Installation
 
