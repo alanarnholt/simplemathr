@@ -35,6 +35,6 @@
 #' @docType data
 #' @description Data I am just using right now.
 #' @format A data frame with 58 observations on 23 variables
-#' @source This is not the real source:  \url{http://www.fpl.fs.fed.us/documnts/pdf2008/fpl_2008_skog001.pdf}
+#' @source This is not the real source just a test:  \url{http://www.fpl.fs.fed.us/documnts/pdf2008/fpl_2008_skog001.pdf}
 #' @keywords datasets
 "hair1958"
