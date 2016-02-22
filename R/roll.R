@@ -40,9 +40,14 @@ RP <- function(x, power = 1){
 #' @examples
 #' set.seed(123)
 #' roll()
-#' roll(1:20)
+#' roll(dietype = 1:20)
 #'
 roll <- function(dietype = 1:6, probvalues = rep(1/length(dietype), length(dietype))){
+  if(all(dietype %in% 1:6)){
+    warning("standard dice")
+    } else {
+    warning("non-standard dice")
+    }
   if(sum(probvalues) != 1)
     stop("'probvalues' must add to one")
   dice <- sample(dietype, size = 2, replace = TRUE, prob = probvalues)

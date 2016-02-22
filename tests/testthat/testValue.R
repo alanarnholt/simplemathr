@@ -9,4 +9,7 @@ test_that("answers are correct",{
   expect_equal(RP(NA, 10), NA_integer_)
   expect_less_than(roll(1:20), 2*20 + 1)
   expect_more_than(roll(), 1)
+  expect_that(roll(dietype = 1:6), gives_warning("standard dice"))
+  expect_that(roll(dietype = 21:26), gives_warning("non-standard dice"))
 })
+
