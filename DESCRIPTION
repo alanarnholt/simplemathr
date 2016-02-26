@@ -10,6 +10,7 @@ Authors@R: c(person("Alan", "Arnholt", email = "arnholtat@appstate.edu", role = 
 Description: Describe what your package does. Make sure this description ends
     with a period.
 Depends: R (>= 3.2.0)
+Imports: e1071
 License: GPL-2
 LazyData: TRUE
 Suggests: knitr,
