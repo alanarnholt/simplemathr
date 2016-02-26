@@ -6,7 +6,7 @@
 \title{hair1958}
 \format{A data frame with 58 observations on 23 variables}
 \source{
-This is not the real source:  \url{http://www.fpl.fs.fed.us/documnts/pdf2008/fpl_2008_skog001.pdf}
+This is not the real source just a test:  \url{http://www.fpl.fs.fed.us/documnts/pdf2008/fpl_2008_skog001.pdf}
 }
 \usage{
 hair1958
