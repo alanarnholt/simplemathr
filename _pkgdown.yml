@@ -4,6 +4,31 @@ template:
   params:
     bootswatch: yeti
 
+home:
+  links:
+  - text: Alan T. Arnholt
+    href: https://alanarnholt.github.io/
+ 
+reference:
+  - title: "Misc functions"
+    desc: >
+      Functions for testing this pgkdown stuff
+    contents: 
+      - roll
+      - eda
+      - RP
+      - sq
+      - ttest
+  - title: "Data sets"
+    desc: >
+      Data sets in this package
+    contents:
+      - Abbey
+      - Ability
+      - Abortion
+      - AGGRESSION
+      - hair1958
+ 
   
 navbar:
   type: inverse
@@ -13,5 +38,7 @@ navbar:
   - text: Articles
     href: articles/index.html
   right:
+  - text: Alan T. Arnholt
+    href: https://alanarnholt.github.io/
   - icon: fa-github fa-lg
     href: https://github.com/alanarnholt/simplemathr/
