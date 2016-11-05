@@ -6,11 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RP. simplemathr</title>
+<title>Power Function — RP • simplemathr</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
-
 <!-- Bootstrap -->
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -22,6 +21,7 @@
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
+<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
@@ -34,10 +34,9 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container template-reference-topic">
       <header>
-      
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -50,18 +49,16 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">Home</a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
   <a href="../articles/index.html">Articles</a>
 </li>
       </ul>
+      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/alanarnholt/simplemathr">
+  <a href="https://github.com/alanarnholt/simplemathr/">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -70,22 +67,23 @@
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
+
       
       </header>
 
-      <div class="page-header">
-  <h1>Power Function</h1>
-</div>
+      <div class="row">
+  <div class="col-md-9 contents">
+    <div class="page-header">
+    <h1>Power Function</h1>
+    </div>
 
-<div class="row">
-  <div class="col-md-9">
     
     <p>Power Function</p>
     
 
     <pre><span class='fu'>RP</span>(<span class='no'>x</span>, <span class='kw'>power</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
     
-    <h2>Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <dl class="dl-horizontal">
       <dt>x</dt>
       <dd>Must be a numeric object.</dd>
@@ -93,24 +91,36 @@
       <dd>A numeric object called <code>power</code>.</dd>
     </dl>
     
-    <div class="Value">
-      <h2>Value</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-      <p>Raises the values in the numeric object <code>x</code> to the value in <code>power</code>.</p>
-    </div>
+    <p>Raises the values in the numeric object <code>x</code> to the value in <code>power</code>.</p>
     
-    <h2 id="examples">Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>RP</span>(<span class='fu'>c</span>(<span class='fl'>1</span>, <span class='fl'>3</span>, <span class='fl'>5</span>), <span class='fl'>3</span>)</div><div class='output co'>#&gt; [1]   1  27 125
-#&gt; </div><div class='input'><span class='fu'>RP</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>1</span>, <span class='fl'>3</span>, <span class='fl'>5</span>), <span class='kw'>power</span> <span class='kw'>=</span> <span class='fl'>3</span>)</div><div class='output co'>#&gt; [1]   1  27 125
-#&gt; </div><div class='input'><span class='fu'>RP</span>(<span class='kw'>power</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>1</span>, <span class='fl'>3</span>, <span class='fl'>5</span>))</div><div class='output co'>#&gt; [1]   1  27 125
-#&gt; </div></pre>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>RP</span>(<span class='fu'>c</span>(<span class='fl'>1</span>, <span class='fl'>3</span>, <span class='fl'>5</span>), <span class='fl'>3</span>)</div><div class='output co'>#&gt; [1]   1  27 125</div><div class='input'><span class='fu'>RP</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>1</span>, <span class='fl'>3</span>, <span class='fl'>5</span>), <span class='kw'>power</span> <span class='kw'>=</span> <span class='fl'>3</span>)</div><div class='output co'>#&gt; [1]   1  27 125</div><div class='input'><span class='fu'>RP</span>(<span class='kw'>power</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='fl'>1</span>, <span class='fl'>3</span>, <span class='fl'>5</span>))</div><div class='output co'>#&gt; [1]   1  27 125</div></pre>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
+
   </div>
 </div>
 
       <footer>
-      <p>Built by <a href="http://hadley.github.io/pkgdown/">pkgdown</a>. Styled with <a href="http://getbootstrap.com">Bootstrap 3</a>.</p>
+      <div class="copyright">
+  <p>Developed by Alan Arnholt, Erin Kreiling, Ben Jones.</p>
+</div>
+
+<div class="pkgdown">
+  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+</div>
+
       </footer>
    </div>
 

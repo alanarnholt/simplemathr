@@ -6,11 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>eda. simplemathr</title>
+<title>Exploratory Data Analysis — eda • simplemathr</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
-
 <!-- Bootstrap -->
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -22,6 +21,7 @@
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
+<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
@@ -34,10 +34,9 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container template-reference-topic">
       <header>
-      
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -50,18 +49,16 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">Home</a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
   <a href="../articles/index.html">Articles</a>
 </li>
       </ul>
+      
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/alanarnholt/simplemathr">
+  <a href="https://github.com/alanarnholt/simplemathr/">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -70,22 +67,23 @@
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
+
       
       </header>
 
-      <div class="page-header">
-  <h1>Exploratory Data Analysis</h1>
-</div>
+      <div class="row">
+  <div class="col-md-9 contents">
+    <div class="page-header">
+    <h1>Exploratory Data Analysis</h1>
+    </div>
 
-<div class="row">
-  <div class="col-md-9">
     
     <p>Function that produces a histogram, density plot, boxplot, and Q-Q plot</p>
     
 
     <pre><span class='fu'>eda</span>(<span class='no'>x</span>, <span class='kw'>trim</span> <span class='kw'>=</span> <span class='fl'>0.05</span>, <span class='kw'>dec</span> <span class='kw'>=</span> <span class='fl'>5</span>, <span class='kw'>tquan</span> <span class='kw'>=</span> <span class='fl'>7</span>)</pre>
     
-    <h2>Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <dl class="dl-horizontal">
       <dt>x</dt>
       <dd>is a numeric vector where <code>NA</code>s and <code>Inf</code>s are allowed but will be removed.</dd>
@@ -97,35 +95,42 @@
       <dd>type of quantile 1 through 9.  For the various types of quantiles, see <code>quantile</code>.</dd>
     </dl>
     
-    <div class="Value">
-      <h2>Value</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-      <p>Function returns various measures of center and location. The values returned for the quartiles are based on the default <span class="pkg">R</span> definitions for quartiles. For more information on the definition of the quartiles, type <code>?quantile</code> and read about the algorithm used by <code>type = 7</code>.</p>
-    </div>
-
-    <div class="Details">
-      <h2>Details</h2>
-
-      <p>The function <code>eda()</code> will not return console window information on data sets containing more than 5000 observations. It will, however, still produce graphical output for data sets containing more than 5000 observations.</p>
-    </div>
-
-    <div class="See also">
-      <h2>See also</h2>
-
-      <p><code>quantile</code></p>
-    </div>
+    <p>Function returns various measures of center and location. The values returned for the quartiles are based on the default <span class="pkg">R</span> definitions for quartiles. For more information on the definition of the quartiles, type <code>?quantile</code> and read about the algorithm used by <code>type = 7</code>.</p>
     
-    <h2 id="examples">Examples</h2>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>The function <code>eda()</code> will not return console window information on data sets containing more than 5000 observations. It will, however, still produce graphical output for data sets containing more than 5000 observations.</p>
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <p><code>quantile</code></p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>eda</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='fu'>rnorm</span>(<span class='fl'>100</span>))</div><img src='eda-2.png' alt='' width='540' height='400' /><div class='output co'>#&gt;  Size (n)   Missing   Minimum    1st Qu      Mean    Median    TrMean    3rd Qu 
 #&gt; 100.00000   0.00000  -2.61233  -0.35608   0.07079   0.09104   0.07676   0.62341 
 #&gt;       Max     Stdev       Var   SE Mean    I.Q.R.     Range  Kurtosis  Skewness 
 #&gt;   2.75542   1.05091   1.10440   0.10509   0.97949   5.36775   0.24235  -0.20594 
 #&gt;  SW p-val 
-#&gt;   0.13736 
-#&gt; </div><div class='input'><span class='co'># Produces four graphs for the 100 randomly</span>
+#&gt;   0.13736 </div><div class='input'><span class='co'># Produces four graphs for the 100 randomly</span>
 <span class='co'># generated standard normal variates.</span></div></pre>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+
+      <li><a href="#details">Details</a></li>
+
+      <li><a href="#see-also">See also</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
+
     <h2>Author</h2>
     
 Alan T. Arnholt &lt;arnholtat@appstate.edu&gt;
@@ -134,7 +139,14 @@ Alan T. Arnholt &lt;arnholtat@appstate.edu&gt;
 </div>
 
       <footer>
-      <p>Built by <a href="http://hadley.github.io/pkgdown/">pkgdown</a>. Styled with <a href="http://getbootstrap.com">Bootstrap 3</a>.</p>
+      <div class="copyright">
+  <p>Developed by Alan Arnholt, Erin Kreiling, Ben Jones.</p>
+</div>
+
+<div class="pkgdown">
+  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+</div>
+
       </footer>
    </div>
 
