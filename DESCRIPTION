@@ -11,7 +11,7 @@ Description: Describe what your package does. Make sure this description ends
     with a period.
 Depends: R (>= 3.2.0)
 Imports: e1071
-License: GPL-2
+License: GPL-3 + file LICENSE
 LazyData: TRUE
 Suggests: knitr,
     rmarkdown,
@@ -19,3 +19,4 @@ Suggests: knitr,
 VignetteBuilder: knitr
 URL: https://github.com/alanarnholt/simplemathr
 BugReports: https://github.com/alanarnholt/simplemathr/issues
+RoxygenNote: 6.0.1
