@@ -106,10 +106,6 @@ Wiley, New York.
 Lehmann, E. L. (1975). \emph{Nonparametrics: Statistical Methods Based on
 Ranks}. Holden and Day, San Francisco.
 }
-\seealso{
-\code{\link{z.test}}, \code{\link{zsum.test}},
-\code{\link{tsum.test}}
-}
 \author{
 Alan T. Arnholt
 }

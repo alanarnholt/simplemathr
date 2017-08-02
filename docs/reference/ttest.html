@@ -11,8 +11,8 @@
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Font Awesome icons -->
@@ -23,14 +23,17 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-
+  
+  
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -84,21 +87,32 @@
     <p>Two-Sample Equal Variance t-Test</p>
     
 
-    <pre><span class='fu'>ttest</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>/<span class='fl'>20</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"two.sided"</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>ttest</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>/<span class='fl'>20</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"two.sided"</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>x</dt>
-      <dd>a non-empty numeric vector.</dd>
-      <dt>y</dt>
-      <dd>a non-empty numeric vector.</dd>
-      <dt>alpha</dt>
-      <dd>value to test hypothesis.</dd>
-      <dt>alternative</dt>
-      <dd>hypothesis (can take on one of three values).</dd>
-      <dt>...</dt>
-      <dd>further arguments to be passed to or from methods.</dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>a non-empty numeric vector.</p></td>
+    </tr>
+    <tr>
+      <th>y</th>
+      <td><p>a non-empty numeric vector.</p></td>
+    </tr>
+    <tr>
+      <th>alpha</th>
+      <td><p>value to test hypothesis.</p></td>
+    </tr>
+    <tr>
+      <th>alternative</th>
+      <td><p>hypothesis (can take on one of three values).</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>further arguments to be passed to or from methods.</p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
@@ -121,8 +135,8 @@
 #&gt; Reject the null hypothesis: FALSE 
 #&gt; 
 #&gt;    t-stat      d.f. tail.area 
-#&gt;   -0.4373  328.0000    0.3311 </div><div class='input'><span class='fu'>plot</span>(<span class='no'>T1</span>)</div><img src='ttest-6.png' alt='' width='540' height='400' /><div class='input'><span class='no'>Mx1x2</span> <span class='kw'>&lt;-</span> <span class='fu'>matrix</span>(<span class='fu'>rnorm</span>(<span class='fl'>60</span>, <span class='fl'>0</span>, <span class='fl'>1</span>), <span class='kw'>nrow</span> <span class='kw'>=</span> <span class='fl'>30</span>)
-<span class='fu'>class</span>(<span class='no'>Mx1x2</span>)</div><div class='output co'>#&gt; [1] &quot;matrix&quot;</div><div class='input'><span class='no'>TM</span> <span class='kw'>&lt;-</span> <span class='fu'>ttest</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Mx1x2</span>)
+#&gt;   -0.4373  328.0000    0.3311 </div><div class='input'><span class='fu'>plot</span>(<span class='no'>T1</span>)</div><div class='img'><img src='ttest-1.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='no'>Mx1x2</span> <span class='kw'>&lt;-</span> <span class='fu'>matrix</span>(<span class='fu'>rnorm</span>(<span class='fl'>60</span>, <span class='fl'>0</span>, <span class='fl'>1</span>), <span class='kw'>nrow</span> <span class='kw'>=</span> <span class='fl'>30</span>)
+<span class='fu'>class</span>(<span class='no'>Mx1x2</span>)</div><div class='output co'>#&gt; [1] "matrix"</div><div class='input'><span class='no'>TM</span> <span class='kw'>&lt;-</span> <span class='fu'>ttest</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Mx1x2</span>)
 <span class='no'>TM</span></div><div class='output co'>#&gt; 
 #&gt; My Monday Night Modified 2 Sample Equal Variance t-test 
 #&gt; 
@@ -130,7 +144,7 @@
 #&gt; Reject the null hypothesis: FALSE 
 #&gt; 
 #&gt;    t-stat      d.f. tail.area 
-#&gt;   -0.0569   58.0000    0.9548 </div><div class='input'><span class='fu'>plot</span>(<span class='no'>TM</span>)</div><img src='ttest-12.png' alt='' width='540' height='400' /><div class='input'><span class='fu'>ttest</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Mx1x2</span>) <span class='co'># Test that a matrix will work</span></div><div class='output co'>#&gt; 
+#&gt;   -0.0569   58.0000    0.9548 </div><div class='input'><span class='fu'>plot</span>(<span class='no'>TM</span>)</div><div class='img'><img src='ttest-2.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>ttest</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Mx1x2</span>) <span class='co'># Test that a matrix will work</span></div><div class='output co'>#&gt; 
 #&gt; My Monday Night Modified 2 Sample Equal Variance t-test 
 #&gt; 
 #&gt; Alternative hypothesis: two.sided 
@@ -138,14 +152,15 @@
 #&gt; 
 #&gt;    t-stat      d.f. tail.area 
 #&gt;   -0.0569   58.0000    0.9548 </div><div class='input'><span class='no'>mylist</span> <span class='kw'>&lt;-</span> <span class='fu'>list</span>(<span class='kw'>xl</span> <span class='kw'>=</span> <span class='fu'>rnorm</span>(<span class='fl'>30</span>), <span class='kw'>yl</span> <span class='kw'>=</span> <span class='fu'>rnorm</span>(<span class='fl'>30</span>))
-<span class='fu'>class</span>(<span class='no'>mylist</span>)</div><div class='output co'>#&gt; [1] &quot;list&quot;</div><div class='input'><span class='fu'>ttest</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>mylist</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"greater"</span>)</div><div class='output co'>#&gt; 
+<span class='fu'>class</span>(<span class='no'>mylist</span>)</div><div class='output co'>#&gt; [1] "list"</div><div class='input'><span class='fu'>ttest</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>mylist</span>, <span class='kw'>alternative</span> <span class='kw'>=</span> <span class='st'>"greater"</span>)</div><div class='output co'>#&gt; 
 #&gt; My Monday Night Modified 2 Sample Equal Variance t-test 
 #&gt; 
 #&gt; Alternative hypothesis: two.sided 
 #&gt; Reject the null hypothesis: FALSE 
 #&gt; 
 #&gt;    t-stat      d.f. tail.area 
-#&gt;   -0.5129   58.0000    0.6100 </div><div class='input'><span class='fu'>plot</span>(<span class='fu'>ttest</span>(<span class='no'>mylist</span>))</div><img src='ttest-20.png' alt='' width='540' height='400' /></pre>
+#&gt;   -0.5129   58.0000    0.6100 </div><div class='input'><span class='fu'>plot</span>(<span class='fu'>ttest</span>(<span class='no'>mylist</span>))</div><div class='img'><img src='ttest-3.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

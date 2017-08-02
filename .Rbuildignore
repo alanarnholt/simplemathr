@@ -6,3 +6,6 @@ README.html
 ^data-raw$
 ^README\.Rmd$
 ^README-.*\.png$
+^docs$
+_pkgdown.yml
+^_pkgdown\.yml$

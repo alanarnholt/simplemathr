@@ -1,4 +1,7 @@
 ################################################################################
+#' @importFrom graphics abline axis box boxplot dotchart hist legend lines mtext par plot plot.design points polygon segments text title
+#' @importFrom stats dbinom density dnorm fitted fivenum median pnorm pt qchisq qnorm qqline qqnorm qt quantile rbinom rnorm rstandard sd shapiro.test var
+#' 
 #' @name AGGRESSION
 #' @title TV and Behavior
 #' @aliases AGGRESSION

@@ -51,8 +51,6 @@
 #' direction of divergence of the population median for \code{x} from \code{md}
 #' (i.e., \code{"greater"}, \code{"less"}, \code{"two.sided"}.)
 #' @author Alan T. Arnholt
-#' @seealso \code{\link{z.test}}, \code{\link{zsum.test}},
-#' \code{\link{tsum.test}}
 #' @references Gibbons, J.D. and Chakraborti, S. (1992). \emph{Nonparametric
 #' Statistical Inference}. Marcel Dekker Inc., New York.
 #' 
